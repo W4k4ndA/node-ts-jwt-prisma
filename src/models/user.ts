@@ -1,0 +1,17 @@
+// Configuración del cliente Prisma con PostgreSQL
+// Exporta el modelo de usuario para operaciones CRUD
+import { PrismaClient } from "../generated/prisma/client.ts";
+import { PrismaPg } from "@prisma/adapter-pg";
+
+import dotenv from 'dotenv';
+dotenv.config();
+
+const adapter = new PrismaPg({
+    connectionString: process.env.DATABASE_URL
+});
+
+const prisma = new PrismaClient({
+    adapter,
+});
+
+export default prisma.user;
