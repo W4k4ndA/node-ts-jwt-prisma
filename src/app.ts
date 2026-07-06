@@ -2,7 +2,7 @@
 // Inicializa el servidor y registra todos los routers disponibles
 import dotenv from 'dotenv';
 import express from 'express';
-import authRoutes from './routes/authRoutes.ts';
+import authRoutes from './routes/auth.routes.ts';
 import animeRouthes from "./routes/anime.routes.ts";
 
 dotenv.config();

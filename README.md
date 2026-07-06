@@ -28,7 +28,7 @@ src/
 │   ├── userInterface.ts      # Interfaz del usuario
 │   └── jwtInterface.ts       # Interfaz del payload JWT
 ├── routes/
-│   ├── authRoutes.ts         # Rutas públicas de autenticación
+│   ├── auth.routes.ts         # Rutas públicas de autenticación
 │   └── anime.routes.ts       # Rutas protegidas de anime
 └── generated/
     └── prisma/               # Cliente Prisma generado

@@ -9,7 +9,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "ESnext",
+    "module": "nodenext",
     "target": "es2023",
     "types": [],
     // For nodejs:

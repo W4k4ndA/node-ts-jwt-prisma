@@ -2,9 +2,9 @@
 // Requiere autenticación JWT para acceder a los recursos
 import dotenv from 'dotenv';
 import express, { NextFunction, Request, Response } from 'express';
-import { register, login } from '../controllers/authController.ts';
+import { register, login } from '../controllers/auth.controller.ts';
 import jwt from 'jsonwebtoken';
-import { getAllCharacters, getCharacterByAnimeName, getCharacterByName } from '../controllers/anime.controllers.ts'
+import { getAllCharacters, getCharacterByAnimeName, getCharacterByName } from '../controllers/anime.controller.ts'
 
 dotenv.config();
 

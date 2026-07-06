@@ -8,7 +8,7 @@
   "main": "app.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
-    "dev": "tsx watch src/server.ts",
+    "dev": "cls &&tsx watch src/server.ts",
     "start": "node dist/server.js"
   },
   "devDependencies": {

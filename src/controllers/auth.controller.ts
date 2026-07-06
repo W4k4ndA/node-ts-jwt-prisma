@@ -71,6 +71,8 @@ export const login = async (req: Request, res: Response): Promise<void> => {
         }
 
         const token = generateToken(user);
+        //seteamos el token en el
+        // localStorage.setItem("token", token); // o sessionStorage / cookie
         res.status(200).json({ token });
         return;
 
